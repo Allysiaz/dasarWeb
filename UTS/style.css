@@ -1,0 +1,179 @@
+/* Palet Warna: */
+/* Dark Blue: #08205B */
+/* Medium Blue: #7096D1 */
+/* Light Blue: #D0E4FF */
+/* Beige/Nude: #DFC9B2 */
+
+body {
+    /* Warna latar belakang umum */
+    background-color: #D0E4FF; /* Light Blue */
+}
+
+/* === Styling Halaman Login (index.php) === */
+.jumbotron.login-header {
+    /* Jumbotron utama di halaman login (TETAP MEDIUM BLUE) */
+    background-color: #08205B; /* Medium Blue */
+    color: #FFFFFF;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
+.card-header {
+    /* Header kartu login */
+    background-color: #08205B; /* Dark Blue */
+    color: #FFFFFF;
+}
+.btn-primary {
+    /* Tombol Login */
+    background-color: #08205B; /* Dark Blue */
+    border-color: #08205B;
+}
+.btn-primary:hover {
+    background-color: #7096D1; /* Medium Blue saat hover */
+    border-color: #7096D1;
+}
+
+/* === Styling Halaman Dashboard (dashboard_template.php) === */
+
+#navbarLogo {
+    height: 40px; /* Atur tinggi sesuai keinginan Anda */
+    width: auto; /* Mempertahankan rasio aspek gambar */
+    margin-right: 10px; /* Beri sedikit jarak dari teks link (opsional) */
+}
+.navbar {
+    /* Navbar */
+    background-color: #08205B !important; /* Dark Blue */
+}
+.jumbotron.dashboard-header {
+    /* DITUKAR: Sekarang menggunakan Beige/Nude */
+    background-color: #ffedda; /* Beige/Nude */
+    color: #08205B; /* Teks Dark Blue untuk kontras */
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
+.jumbotron.dashboard-header h1 {
+    font-weight: bold; 
+}
+.file-upload-container {
+    border: 2px dashed #ffedda; /* Beige/Nude untuk border dashed */
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFFFF; 
+}
+/* Tombol Pilih Gambar */
+.btn-info {
+    background-color: #08205B;
+    border-color: #08205B;
+}
+.btn-info:hover {
+    background-color: #7096D1;
+    border-color: #7096D1;
+}
+/* Tombol Upload (saat disabled) */
+.btn-secondary {
+    background-color: #ffedda;
+    border-color: #ffedda;
+    color: #08205B;
+}
+.btn-secondary:hover:not(:disabled) {
+    background-color: #7096D1;
+    border-color: #7096D1;
+    color: #FFFFFF;
+}
+/* Tombol Upload (saat enabled) */
+.btn-success {
+    background-color: #08205B;
+    border-color: #08205B;
+}
+.btn-success:hover {
+    background-color: #7096D1;
+    border-color: #7096D1;
+}
+/* Alert Styling */
+.alert-info {
+    background-color: #7096D1;
+    border-color: #7096D1;
+    color: #FFFFFF;
+}
+.alert-success {
+    background-color: #ffedda;
+    border-color: #ffedda;
+    color: #08205B;
+}
+.alert-danger {
+    background-color: #08205B;
+    border-color: #08205B;
+    color: #FFFFFF;
+}
+/* ... Styling sebelumnya tetap ada ... */
+
+/* === Styling Form Upload (Tambahan dari Praktikum Bagian 4) === */
+
+.file-upload-container {
+    max-width: 500px; /* Batasi lebar container agar mirip dengan contoh jobsheet */
+    margin: 20px auto; /* Tambahkan margin auto untuk di tengah */
+    border: 2px dashed #ffedda;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFFFF; 
+}
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+#imageFile { /* Menggantikan .file-input di jobsheet */
+    display: none;
+}
+.file-label { /* Menggantikan .file-label di jobsheet */
+    background-color: #08205B; /* Dark Blue */
+    color: #FFFFFF; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #08205B;
+    transition: background-color 0.3s;
+}
+.file-label:hover {
+    background-color: #7096D1; /* Medium Blue saat hover */
+    border-color: #7096D1;
+}
+
+/* Menggantikan styling .btn-secondary/.btn-success untuk tombol Upload */
+.upload-button { /* Menggantikan .upload-button di jobsheet */
+    background-color: #7096D1; /* Medium Blue */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5; /* Opacity default (disabled) */
+    transition: opacity 0.3s;
+}
+.upload-button:disabled {
+    background-color: #DFC9B2; /* Beige/Nude saat disabled */
+    cursor: not-allowed;
+    opacity: 0.5;
+    color: #08205B;
+}
+/* Style saat tidak disabled (akan diatur oleh jQuery) */
+.upload-button:not(:disabled) {
+    opacity: 1;
+    background-color: #08205B;
+}
+.upload-button:not(:disabled):hover {
+    background-color: #7096D1;
+}
+
+.upload-status { /* Menggantikan .upload-status di jobsheet */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* === Styling Footer === */
+.jumbotron.app-footer {
+    
+    color: #08205B; /* Teks Putih untuk kontras */
+}

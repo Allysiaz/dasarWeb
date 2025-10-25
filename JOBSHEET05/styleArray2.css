@@ -1,0 +1,23 @@
+h2 {
+    color: green;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse ;
+    border-spacing: 0 ;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+tr:first-child {
+    background-color: #4CAF50; 
+    color: white; 
+    font-weight: bold; 
+}
+
